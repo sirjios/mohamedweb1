@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ألعاب مجانية - محلية 100% 🎮</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <div class="container">
+      <h1>ألعاب مجانية محلية</h1>
+      <p>العب بدون إنترنت | كل شيء داخل الملف!</p>
+    </div>
+  </header>
+
+  <section class="games">
+    <div class="container">
+      <h2>اختر لعبتك</h2>
+      <div class="grid">
+        <div class="game-card" onclick="openGame('snake')">
+          <h3>الأفعى</h3>
+          <p>كل الطعام ولا تصطدم!</p>
+        </div>
+        <div class="game-card" onclick="openGame('tetris')">
+          <h3>تيتريس</h3>
+          <p>رتب البلوكات قبل الامتلاء!</p>
+        </div>
+        <div class="game-card" onclick="openGame('tictactoe')">
+          <h3>X O</h3>
+          <p>هزم الذكاء الاصطناعي!</p>
+        </div>
+        <div class="game-card" onclick="openGame('flappy')">
+          <h3>فلابي بيرد</h3>
+          <p>طير عبر الأنابيب!</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Game Overlay -->
+  <div id="game-overlay">
+    <div class="game-container">
+      <button onclick="closeGame()" class="close-btn">✕</button>
+      <h2 id="game-title"></h2>
+      <div id="game-content"></div>
+      <div id="game-score"></div>
+      <div id="high-score" style="margin-top:10px; color:#ff0;"></div>
+    </div>
+  </div>
+
+  <footer>
+    <p>© 2025 ألعاب مجانية - من صنع <strong>Grok</strong> | 100% محلي</p>
+  </footer>
+
+  <script src="games.js"></script>
+</body>
+</html>
